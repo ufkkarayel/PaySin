@@ -21,4 +21,10 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\PaySin.BusinessLayer\PaySin.BusinessLayer.csproj" />
+    <ProjectReference Include="..\PaySin.DataAccessLayer\PaySin.DataAccessLayer.csproj" />
+    <ProjectReference Include="..\PaySin.EntityLayer\PaySin.EntityLayer.csproj" />
+  </ItemGroup>
+
 </Project>

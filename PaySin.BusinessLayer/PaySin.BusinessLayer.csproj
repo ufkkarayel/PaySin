@@ -7,6 +7,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="11.5.2" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.5.2" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.36" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.36">
       <PrivateAssets>all</PrivateAssets>
@@ -21,7 +23,14 @@
 
   <ItemGroup>
     <ProjectReference Include="..\PaySin.DataAccessLayer\PaySin.DataAccessLayer.csproj" />
+    <ProjectReference Include="..\PaySin.DtoLayer\PaySin.DtoLayer.csproj" />
     <ProjectReference Include="..\PaySin.EntityLayer\PaySin.EntityLayer.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="ValidationRules\AppRoleValidationRules\" />
+    <Folder Include="ValidationRules\CustomerAccountValidationRules\" />
+    <Folder Include="ValidationRules\CustomerAccountProcessValidationRules\" />
   </ItemGroup>
 
 </Project>
